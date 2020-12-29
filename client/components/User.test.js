@@ -12,7 +12,7 @@ const fakeUser = {
 describe('User Component', () => {
   it('should render firstName, lastName, email', () => {
     const user = shallow(<User {...fakeUser} />)
-    expect(user.find('.user--first-name').text()).to.equal(fakeUser.firstName)
+    expect(user.find('.user--first-name').text()).to.equal(fakeUser.firstname)
     expect(user.find('.user--last-name').text()).to.equal(fakeUser.lastName)
     expect(user.find('.user--email').text()).to.equal(fakeUser.email)
   })
